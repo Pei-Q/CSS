@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+            
+        div{
+            width: 600px;
+            height: 600px;
+            background: red;
+            position:relative;
+        }
+        div i{
+            display: block;
+            width: 30px;
+            height: 30px;
+            background: blue;
+            position:absolute;
+            /*盒模型当中，写了百分比的话，意思就是父级元素尺寸的百分比*/
+            left: 50%;
+            top: 50%;
+            /*margin-left: -15px;
+            margin-top: -15px;*/
+            transform:translate(-50%, -50%);
+            /*3.子元素在父元素中居中显示：
+                子绝父相。子元素left、top50%，通过transform:translate(-50%, -50%);移回自己的一半
+            */
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <i></i>
+    </div>
+</body>
+</html>

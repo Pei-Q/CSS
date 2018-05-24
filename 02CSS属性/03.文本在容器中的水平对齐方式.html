@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        .aa{
+            width: 400px;
+            background: red;
+            /*6.文本在当前容器中的水平对齐方式 text-align （left默认向左  right向右对齐 center居中对齐 justify调整,对英文有效果）*/
+            text-align:justify;
+        }
+
+        /*-----错误事例：-------*/
+        .bb{
+            width: 600px;
+            height: 600px;
+            background-color: blue;
+            text-align:center;
+        }
+        .bb .son{
+            width: 200px;
+            height: 200px;
+            background-color:green;
+        }
+    </style>
+</head>
+<body>
+    <div class="aa">哈哈哈jkgjk jkfjgk fgjkfjg fgjkfgjk fgjkfgjkf fgjkfjgkls gfjgkf</div>
+    <div class="bb">
+        <div class="son">你真是棒！</div>
+    </div>
+</body>
+</html>

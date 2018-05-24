@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        div{width: 200px;height: 300px;position:relative;margin:250px auto;}
+        div img{width: 200px;height: 300px;position:absolute;left: 0;top: 0;transition:transform 3s;transform-origin: right top;}
+        div:hover img:nth-child(1){transform: rotate(60deg);}
+        div:hover img:nth-child(2){transform: rotate(120deg);}
+        div:hover img:nth-child(3){transform: rotate(180deg);}
+        div:hover img:nth-child(4){transform: rotate(240deg);}
+        div:hover img:nth-child(5){transform: rotate(300deg);}
+        div:hover img:nth-child(6){transform: rotate(360deg);}
+
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <img src="../images/pk1.png" alt="" />
+        <img src="../images/pk2.png" alt="" />
+        <img src="../images/pk1.png" alt="" />
+        <img src="../images/pk2.png" alt="" />
+        <img src="../images/pk1.png" alt="" />
+        <img src="../images/pk2.png" alt="" />
+    </div>
+</body>
+</html>

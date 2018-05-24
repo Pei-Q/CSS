@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        /*4.通配符选择器*/
+        *{margin: 0;padding: 0;}
+        /*1.标签选择器*/
+        div{width: 200px;}
+        /*2.类选择器：通过.类名获取元素*/
+        .aa{height: 200px;}
+        /*3.id选择器：通过#id名获取元素*/
+        #bb{background:red;}
+        /*5.群组选择器，将选择器用逗号隔开，表示都获取到*/
+        .aa,.cc{color:blue;}
+        /*6.交集选择器:获取同时满足多个选择器的元素。（基本选择器之间没有空格，标签名一定写在最前面）*/
+        div.dd{}
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="aa" id="bb">fff</div>
+    <p class="cc">ff</p>
+    <div class="dd">dfdf</div>
+    <p class="dd">的开发家肯德基</p>
+</body>
+</html>

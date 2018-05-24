@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        .father{
+            width: 1000px;height: 600px;
+            /*1.设置成弹性盒*/
+            display:flex;
+            /*2. flex-direction创建主轴方向
+                *row 默认主轴方向是水平向右
+                *column 主轴方向为垂直向下
+                *row-reverse 主轴方向是水平向左
+                *column-reverse 主轴方向为垂直向上
+            */
+            flex-direction:column;
+        }
+        .father .son1{width:100px;flex:1;background: red;}
+        .father .son2{flex:2;background: blue;}
+        .father .son3{flex:3;background: green;}
+
+
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="son1"></div>
+        <div class="son2"></div>
+        <div class="son3"></div>
+    </div>
+</body>
+</html>

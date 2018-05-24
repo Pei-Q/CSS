@@ -1,0 +1,10 @@
+http://www.cnblogs.com/theWayToAce/p/6999371.html
+
+//1.sublime text文件所在位置-data-packages
+//2.preference-package setting- cssrem-user
+{
+    "px_to_rem":99,
+    "max_rem_fraction_length": 6,
+    "available_file_types": [".html",".css", ".less", ".sass"]
+}
+//3.preference-设置用户-第一句代码删掉 "auto_complete": false,[取消智能提示]

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        div{
+            width: 300px;
+            height: 300px;
+            border:20px solid #ccc;
+            margin:100px auto;
+            /*2.边框图片 border-image
+                （1）边框图片资源border-image-source:url()。引入后，图片会默认放在边框的四个角。
+                （2）边框图片切割border-image-slice.取值遵循上右下左（缺省找反义词）,不带单位
+                （3）边框图片宽度border-image-width.若是想要边框图片完全放在边框内，则该值<=border-width
+                 (4) 边框图片向外延伸border-image-outset.不能取负值
+                 (5) 边框图片重复 border-image-repeat。默认值为stretch拉伸，repeat重复 round缩放后的重复
+            */
+           border-image-source: url("../images/border.png");
+           border-image-slice: 27;
+           border-image-width: 27px;
+           border-image-outset: 0px;
+           border-image-repeat: round;
+        }
+    
+
+
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

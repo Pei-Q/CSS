@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        .box{font-size: 0;}
+        .box div{font-size: 14px;}
+        .dv1{
+            width: 200px;
+            height: 200px;
+            background: red;
+            display:inline-block;
+            vertical-align: top;
+        }
+        .dv2{
+            width: 200px;
+            height: 200px;
+            background: blue;
+            display:inline-block;
+            vertical-align:top;   
+        }
+        /*设置成行内块级元素存在的问题：
+        （1）多个行内块级元素之间会存在缝隙，一般是不需要的。解决办法：
+            -书写时不要换行。
+            -将其父元素的字体大小设成0
+        （2）行内元素都会存在默认以基线对齐的问题。
+            解决办法:通过vertical-align修改
+        */
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="dv1">发那个kg加快立法机构</div>
+        <div class="dv2"></div>
+    </div>
+   
+   
+</body>
+</html>

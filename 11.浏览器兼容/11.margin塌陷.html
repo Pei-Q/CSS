@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        .father{width: 600px;height: 600px;background: #ccc;border:1px solid #ccc;}
+        .father .son{
+            width: 200px;height: 200px;background: red;
+            margin-top:100px;
+            /*margin塌陷：当父元素与子元素存在上间距时，若是给子元素加margin-top，则会错误地渲染成父元素的margin-top。解决办法：
+                （1）给父元素加overflow:hidden;
+                （2）父元素或者子元素浮动了
+                （3）父元素加上边框
+                （4）将子元素的margin-top变成父元素的padding-top
+            */
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+</body>
+</html>

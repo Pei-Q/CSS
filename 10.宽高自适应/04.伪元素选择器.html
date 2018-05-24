@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        /*1.E::before 给E元素添加第一个子元素(默认显示方式为行内元素)。content属性书写内容，就算内容为空，也不能省略该属性（content:"";）。*/
+        /*2.E::after 给E元素添加最后一个子元素。特点同上。*/
+        div::before{
+            /*content:url("../images/1.jpg");*/
+            /*content:"《道德经》";*/
+            display:block;
+            width:300px;
+            height: 300px;
+        }
+        div::after{
+            content:"by lemon";
+        }
+        /*3.E::first-letter 获取到E元素内容的第一个字,E元素必须是块级元素*/
+        p::first-letter{
+            font-size:20px;
+            color:red;
+        }
+        /*4.E::first-line 获取到E元素内容的第一行,E元素必须是块级元素*/
+        p::first-line{
+            background:#ccc;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 留出4行。 -->
+
+    <div>
+        <!-- <h3>《道德经》</h3> -->
+        将来的你会感谢现在勇敢拼搏的你！
+        <!-- <span>by lemon</span> -->
+    </div>
+
+    <p>
+        妹子搭公交的时候必须要带包盐，找寻目标，发现长得好看的就坐在那个男生旁边，先把盐放在座位上再坐下。后来到站了，男生就跟女生走了。为什么呢？猜一个成语。言多必失.
+    </p>
+</body>
+</html>

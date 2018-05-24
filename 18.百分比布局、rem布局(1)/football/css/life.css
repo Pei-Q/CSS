@@ -1,0 +1,54 @@
+/* 
+* @Author: Marte
+* @Date:   2018-01-31 09:40:29
+* @Last Modified by:   Marte
+* @Last Modified time: 2018-01-31 10:54:14
+*/
+/*(二)
+1.整个页面高度一定要设置成100%,一定要设置成弹性盒，主轴方向垂直向下.
+2.main区域自动调整高度,设置成flex:1;为了main部分可以滚动，应该设置overflow-y：auto；overflow-x:hidden;可以省略前一句。
+*/
+body,html{height: 100%;}
+#football{height: 100%;display:flex;flex-direction:column;}
+#f_header ul{height: 88px;background: #0CC440;display:flex;justify-content: space-between;}
+#f_header li:nth-child(1),#f_header li:nth-child(3){width: 88px;/*height: 88px;*/text-align: center;line-height: 88px;font-size:40px;}
+#f_header li:nth-child(2){
+    width: 236px;height: 48px;display:flex;align-self: center;
+}
+#f_header li:nth-child(2) span{
+    width: 118px;height: 48px;text-align: center;
+    line-height: 48px;background-color: #63D985;
+}
+#f_header li:nth-child(2) span:nth-child(1){
+    border-radius:24px  0 0 24px;
+}
+#f_header li:nth-child(2) span:nth-child(2){
+    border-radius:0 24px  24px 0 ;
+}
+#f_header li:nth-child(2) .active{
+    background: #3DD066;
+}
+
+
+#f_nav ul{height: 71px;border-bottom: 1px solid #D9D9D9;display:flex;}
+#f_nav li{flex:1;text-align: center;line-height: 71px;font-size: 28px;color:#676767;}
+#f_nav .active{color:#69C282;border-bottom: 5px solid #08C63E;}
+
+
+
+#f_main{flex:1;overflow-x:hidden;}
+#f_main ul{display:flex;flex-wrap:wrap;}
+#f_main ul li{width:49%;border:1px solid #ccc;}
+#f_main ul li:nth-child(2n-1){margin-right:2%;}
+#f_main ul li img{width: 100%;}
+#f_main ul li p{font-size: 24px;color:#303030;}
+
+
+
+
+#f_footer ul{height: 88px;border-top: 1px solid #D9D9D9;display:flex;}
+#f_footer li{flex:1;display:flex;flex-direction: column;justify-content: center;text-align: center;position:relative;}
+#f_footer li i{font-size:36px;}
+#f_footer li span{font-size: 24px;}
+
+#f_footer li:nth-child(3) i{position:absolute;width: 105px;height: 105px;border:1px solid red;border-radius: 50%;background: #fff;left: 50%;transform: translate(-50%,-5px);text-align:center;line-height: 88px;font-size:60px;}

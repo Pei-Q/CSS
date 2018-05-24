@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        .clock{width: 200px;height: 200px;border:2px solid #ccc;margin:100px auto;border-radius: 50%;position:relative;}
+        .clock .xian{width: 6px;height: 200px;background: #ccc;position:absolute;left: 50%;margin-left: -3px;}
+        .clock .xian2{transform:rotate(30deg);}
+        .clock .xian3{transform:rotate(60deg);}
+
+        .clock .xian4{transform:rotate(90deg);}
+
+        .clock .xian5{transform:rotate(120deg);}
+        .clock .xian6{transform:rotate(150deg);}
+        .clock .cover{width: 160px;height: 160px;background: #fff;position:absolute;left: 50%;top: 50%;transform:translate(-50%,-50%);border-radius: 50%;}
+        .clock .zhen{position:absolute;left: 50%;top: 50%;transform:translate(-50%,-100%) rotate(0);transform-origin: center bottom;}
+        .clock .second{width: 2px;height: 80px;background: red;animation:xuanzhuan 60s steps(60) infinite;}
+        .clock .minute{width: 4px;height: 70px;background: blue;animation:xuanzhuan 3600s linear infinite;}
+
+        .clock .hour{width: 6px;height: 60px;background:green;animation:xuanzhuan 43200s linear infinite;}
+    
+        @keyframes xuanzhuan{
+            0%{}
+            100%{
+                transform:translate(-50%,-100%) rotate(360deg);
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="clock">
+        <div class="xian xian1"></div>
+        <div class="xian xian2"></div>
+        <div class="xian xian3"></div>
+        <div class="xian xian4"></div>
+        <div class="xian xian5"></div>
+        <div class="xian xian6"></div>
+        <div class="cover"></div>
+        <div class="zhen second"></div>
+        <div class="zhen minute"></div>
+        <div class="zhen hour"></div>
+    </div>
+</body>
+</html>

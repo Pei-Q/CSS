@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background: red;
+            margin:150px auto;
+            /*1.缩放变换 transform:scale(水平，垂直); 
+                * 取值:代表倍数
+                * 变换的基准点在元素中间
+                * transform:scaleX(水平);
+                * transform:scaleY(垂直);
+            */
+            transition:transform 2s;
+        }
+        div:hover{
+            transform:scale(2,0.5);
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

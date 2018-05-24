@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style type="text/css">
+        #field{width: 450px;height: 495px;padding:0 19px;border:2px solid #C6C8C7;}
+        #field h3{font-size: 12px; color:#020202;margin:0;height: 50px;line-height: 50px;}
+        #field .field1{width: 427px;height: 110px;padding:15px 10px;}
+        #field legend{border:1px solid #C6C8C7;padding:4px 20px;font-size: 12px;color:#4A6E7A;}
+        #field .field1 .lab{display:inline-block;width: 135px;text-align: right;}
+        /*#field .field1 input{width: 119px;margin: 0 0 8px 8px;;height: 19px;}
+        #field .field1 .check{display:inline-block;width: 59px;height: 25px;font-size: 12px;}
+        #field .field1 .btn{display:inline-block;width: 62px;height: 19px;border:1px solid #5E727B;background:#D0F0FD;font-size: 12px;}*/
+    </style>
+</head>
+<body>
+    <fieldset id="field">
+        <h3>已注册用户登录</h3>
+        <fieldset class="field1">
+            <legend>用户登录</legend>
+            <label for="uname" class="lab">用户名</label><input type="text" id="uname" /><br />
+            <label for="upwd" class="lab">密码</label><input type="password" id="upwd" /><br />
+            <label class="check"><input type="checkbox" />记住我</label>  <input type="submit" value="登录" class="btn"><br>
+            <a href="#">您忘记密码?</a>
+        </fieldset>
+        <h3>未注册创建账户</h3>
+        <fieldset class="field2">
+            <legend>用户注册</legend>
+            <label for="uname2">用户名</label><input type="text" id="uname2" /><span>*(最多30个字符)</span><br />
+            <label for="uemail">电子邮箱</label><input type="text" id="uemail"/><span>*</span><br />
+            <label for="upwd2">密码</label><input type="text" id="upwd2" /><span>*(最多15个字符)</span><br />
+            <label for="upwd3">重复密码</label><input type="text" id="upwd3" /><span>*</span><br />
+            <label>同意服务条款<input type="checkbox" /></label><a href="#">先看看条款?</a><span>*</span><br />
+            <input type="submit" value="提交"/>
+            <input type="reset" value="重置"/>
+        </fieldset>
+    </fieldset>
+</body>
+</html>

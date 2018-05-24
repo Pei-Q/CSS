@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        table{
+            /*（1）单元格间距：border-spacing,用在table上,不可以取负值*/
+            border-spacing:0;
+            /*（2）合并单元格边框 :border-collapse,属性值：separate分离（默认），collapse合并*/
+           /* border-collapse:collapse ;*/
+           /*border-collapse: separate;*/
+        }
+        td{
+            /*(3)无内容时，单元格设置empty-cells.属性值：show显示（默认）,hide隐藏。
+            注意：若是单元格边框合并了，设置empty-cells:hide;看不见效果。
+            */
+            empty-cells:hide;
+        }
+        caption{
+            /*caption-side:left;*/
+        }
+
+    </style>
+</head>
+<body>
+    <table border="1">
+        <caption>表格标题</caption>
+        <tr>
+            <td>01</td>
+            <td>02</td>
+            <td>03</td>
+        </tr>
+        <tr>
+            <td>01</td>
+            <td>02</td>
+            <td>03</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>

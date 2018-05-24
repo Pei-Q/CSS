@@ -1,0 +1,30 @@
+/* 
+* @Author: Marte
+* @Date:   2018-01-15 10:10:36
+* @Last Modified by:   Marte
+* @Last Modified time: 2018-01-15 16:28:26
+*/
+#w_news{width: 100%;height: 241px;background: #fff;}
+#w_news .container{height: 230px;padding-top:11px;}
+#w_news .news_l{width: 450px;height: 230px;background: red;padding:0 28px 0 22px;}
+#w_news .news0 h3{line-height: 64px;font-size: 18px;}
+#w_news .news_l ul li a{display:block;height: 24px;line-height: 24px;font-size:12px;
+    /*若想每个列表项前面的小圆点也能被点击，则将padding-left加在a上，添加背景图片no-repeat，背景图片的定位一般是0 center;*/
+    background: url("../images/dotted.jpg") no-repeat left center;padding-left: 12px;}
+
+
+#w_news .news_c{width:190px;height: 230px;background: blue;padding:0 25px;}
+#w_news .news_c p{line-height: 30px;font-size:14px;}
+#w_news .news_r{width: 235px;height: 230px;background: url("../images/huapen.jpg") no-repeat right bottom;}
+#w_news .news_r p{line-height: 24px;font-size:12px;color:#9E9E9E;}
+#w_news .news_r a{display:block;width: 66px;height: 20px;background: url("../images/more.jpg") no-repeat;margin-top: 47px;}
+
+
+
+
+
+#w_market{width: 100%;height: 305px;background: pink;}
+#w_market .container{width:960px;height: 292px;padding: 13px 20px 0;}
+#w_market h3{line-height: 52px;font-size: 18px;}
+#w_market .market0{margin-right: 40px;}
+#w_market .market0 p{line-height: 22px;font-size: 12px;margin-top: 12px;}

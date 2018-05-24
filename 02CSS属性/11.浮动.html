@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        /*标准流中，页面布局必须遵循从左往右，从上往下*/
+        .dv1{
+            width: 650px;
+            height: 300px;
+            background: #ccc;
+            /*（六）浮动float（left向左浮动  right向右浮动 none不浮动）*/
+            /*1.浮动后的元素会脱离标准流,但是里面的内容不会脱离文本流。*/
+            /*2.浮动后的元素相当于行内块级元素（一行显示多个、可以设置宽高）*/
+            /*3.若是一行放不下所有的浮动元素，则放不下的那个浮动元素会在它上一个元素的最低点开始摆放。*/
+            float: left;
+        }
+        .dv2{
+            width: 500px;
+            height: 200px;
+            background: pink;
+            float: left;
+        }
+        .dv3{
+            width: 600px;
+            height: 300px;
+            background: blue;
+            float: left;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="dv1"></div>
+    <div class="dv2"></div>
+    <div class="dv3"></div>
+</body>
+</html>

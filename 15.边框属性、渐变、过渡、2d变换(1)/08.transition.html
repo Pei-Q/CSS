@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background: red;
+            /*1.过渡transition
+            （1）需要过渡的属性：transition-property (多个过渡属性之间用逗号隔开，all代表所有属性)
+             (2) 过渡的时间  transition-duration
+             (3) 过渡的形式  transition-timing-function
+                    *linear线性、匀速    ease、ease-in-out慢速进入慢速离开
+                    *ease-in慢速进入   ease-out慢速离开
+             (4) 过渡的延迟 transition-delay
+             transition:(1) (2) (3) (4);  (3)(4)可选。
+            */
+           transition-property: all;
+           transition-duration: 3s;
+           /*transition-timing-function: linear;*/
+           /*transition-delay:0;*/
+           /*transition:width 3s;*/
+        }
+        div:hover{
+            width: 400px;
+            height: 400px;
+            background: blue;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background:red;
+            margin:150px auto;
+            /*3.旋转变换 transform:rotate(角度deg)
+                * 顺时针为正方向
+                * 旋转的基准点在元素中心
+                * 可以取负数
+
+            */
+           transition:transform 3s;
+            
+        }
+        div:hover{
+            transform:rotate(-90deg);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

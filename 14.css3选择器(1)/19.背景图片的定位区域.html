@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        div{
+            /*2.背景图片的定位区域 background-origin*/
+            /*默认，背景图片是从padding的左上角开始定位，说明默认的定位区域为padding以内。（padding-box）*/
+            /*content-box:内容以内,换句话说background-position:0 0位置就是在content左上角
+            border-box 边框以内,换句话说background-position:0 0位置就是在border左上角
+
+            */
+
+            width: 200px;
+            height: 200px;
+            padding:10px;
+            border:10px solid rgba(255,0,0,0.3);
+            background:url("../images/20.jpg") no-repeat;
+            background-origin: border-box;
+            /*background-position: -10px 0;*/
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

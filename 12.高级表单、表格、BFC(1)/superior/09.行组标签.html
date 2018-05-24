@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+</head>
+<body>
+    <table rules="groups">
+        <!-- 2.行分组：thead表头  tbody 表体  tfoot表尾 
+                thead>tr>th标题行的单元格
+                tbody>tr>td
+                tfoot>tr>td
+                如果要使用 thead、tfoot 以及 tbody 元素，就必须使用全部的元素（tfoot若没有就不用）。
+                书写的次序应该是thead、tfoot、tbody。这样浏览器就可以在收到所有数据前先呈现表尾了。
+        -->
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>年龄</th>
+                <th>爱好</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td colspan="3">这是gz-html5-1802班级信息</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>小红</td>
+                <td>17</td>
+                <td>男</td>
+            </tr>
+            <tr>
+                <td>小明</td>
+                <td>18</td>
+                <td>小红</td>
+            </tr>
+            <tr>
+                <td>小华</td>
+                <td>17</td>
+                <td>读英语</td>
+            </tr>
+        </tbody>
+        
+    </table>
+</body>
+</html>

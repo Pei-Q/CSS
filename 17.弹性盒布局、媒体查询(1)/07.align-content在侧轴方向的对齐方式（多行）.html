@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        .father{
+            width: 1000px;height: 600px;border:1px solid #ccc;
+            display:flex;
+            flex-wrap: wrap;
+            /*7.align-content （多行）子项目在侧轴方向的对齐方式 
+                ｛属性值同justify-content｝
+                *flex-start （默认）在侧轴方向的起点位置靠齐摆放
+                *flex-end 在侧轴方向的终点位置靠齐摆放
+                *center 在侧轴方向的中心位置靠齐摆放
+                *space-between 将空白区域平分在子项目之间
+                *space-around 将空白区域环绕在子项目两边。（容器两侧留白是子项目之间留白的一半）
+
+            */
+
+            align-content:space-around;
+
+        }
+        .father .son{width: 50%;height: 200px;background: red;}
+        .father .son2{background: blue;}
+        .father .son3{background: green;}
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="son son1"></div>
+        <div class="son son2"></div>
+        <div class="son son3"></div>
+    </div>
+</body>
+</html>

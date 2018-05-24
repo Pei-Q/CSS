@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+    <!-- 1.新建站点，index.html首页，连接到对应的css文件。 -->
+    <!-- 2.css:
+        (1)去除默认样式
+        (2)提取公共样式
+            每一部分的版心容器（container，即内容部分）都是宽度1000px，且都居中
+        (3)书写页面代码
+            1.头部内容区域：
+            h1、ul：宽、高、背景、浮动
+            ul>li>a:
+            li只做浮动。
+            a（display：block;）设置盒子大小(高度确定，content（字体大小*字数决定的）+左右padding（设置）撑开盒子尺寸)、边框
+            a的字体大小、字体颜色，垂直方向的文本居中
+            鼠标悬停在li时，改变后代a的背景颜色。
+        3.html:
+            大盒子（#qphone）>每一层结构（例如#header）>版心容器（.container）  
+        注意：外层元素用id名;
+            h1中的logo用背景图片,同时写上文字，通过text-indent隐藏。
+            关于li前面的小图标，一般会给li留个padding的位置，再给li加上背景图片，而且要no-repeat，background-position一般都是0 center;
+     -->
+    <div id="qphone">
+        <div id="qheader">
+            <div class="container">
+                <h1>千锋互联</h1>
+                <!-- ul>li*9>a[href="#"] -->
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="html/zoujin.html">走进千锋</a></li>
+                    <li><a href="#">人才服务</a></li>
+                    <li><a href="#">千峰教育</a></li>
+                    <li><a href="#">好程序员</a></li>
+                    <li><a href="#">扣丁学堂</a></li>
+                    <li><a href="#">app外包</a></li>
+                    <li><a href="#">培训服务</a></li>
+                    <li><a href="html/fuhua.html" style="border-right:0 none;">创业孵化</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="qbanner"></div>
+
+
+        <div id="qmain">
+            <div class="container">
+                <div class="main_cont">
+                    <div class="main_c0">
+                        <img src="images/main1.png" />
+                        <h3>移动产业</h3>
+                        <h4>国内最大国内最大一定移动</h4>
+                        <ul>
+                            <li>房价看跌房价大幅加快发动机</li>
+                            <li>房价看跌房价大幅加快发动机</li>
+                            <li>房价看跌房价大幅加快发动机</li>
+                        </ul>
+                    </div>
+                    <div class="main_c0">
+                        <img src="images/main2.png" />
+                        <h3>移动产业</h3>
+                        <h4>国内最大国内最大一定移动</h4>
+                        <ul>
+                            <li>房价看跌房价大幅加快发动机</li>
+                            <li>房价看跌房价大幅加快发动机</li>
+                            <li>房价看跌房价大幅加快发动机</li>
+                        </ul>
+                    </div>
+                    <div class="main_c0">
+                        <img src="images/main3.png" />
+                        <h3>移动产业</h3>
+                        <h4>国内最大国内最大一定移动</h4>
+                        <ul>
+                            <li>房价看跌房价大幅加快发动机</li>
+                            <li>房价看跌房价大幅加快发动机</li>
+                            <li>房价看跌房价大幅加快发动机</li>
+                        </ul>
+                    </div>
+                    <div class="main_c0" style="border-right:0 none;">
+                        <img src="images/main4.png" />
+                        <h3>移动产业</h3>
+                        <h4>国内最大国内最大一定移动</h4>
+                        <ul>
+                            <li>房价看跌房价大幅加快发动机</li>
+                            <li>房价看跌房价大幅加快发动机</li>
+                            <li>房价看跌房价大幅加快发动机</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="qnews">
+            <div class="container">
+                <div class="news_cont">
+                    <div class="news_c1">
+                        <img src="images/news1.png" />
+                    </div>
+                    <div class="news_c2">
+                        <h3>动态新闻</h3>
+                        <h4>高房价困局客房价格辅导费</h4>
+                        <p>将扩大解放个客房价格附近公交分局购房价款共计服地块附近的结果</p>
+                        <ul>
+                            <li><a href="#">恢复计划的结果合法</a></li>
+                            <li><a href="#">恢复计划的结果合法</a></li>
+                            <li><a href="#">恢复计划的结果合法</a></li>
+                            <li><a href="#">恢复计划的结果合法</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="news_c3"></div>
+                </div>
+            </div>
+        </div>
+        <div id="qlinks">
+            <div class="container">
+                <div class="links1">
+                    <!-- dl*5>dt{走进千锋}+dd{千锋简介}*3    -->
+                    <dl style="margin-left:10px;">
+                           <dt>走进千锋</dt>
+                           <dd>千锋简介</dd>
+                           <dd>千锋简介</dd>
+                           <dd>千锋简介</dd>
+                       </dl>
+                       <dl>
+                           <dt>走进千锋</dt>
+                           <dd>千锋简介杰</dd>
+                           <dd>千锋简介哈</dd>
+                           <dd>千锋简介</dd>
+                           <dd>千锋简介嘻</dd>
+                       </dl>
+                       <dl>
+                           <dt>走进千锋</dt>
+                           <dd>千锋简介</dd>
+                           <dd>千锋简介</dd>
+                           <dd>千锋简介</dd>
+                           <dd>千锋简介</dd>
+                       </dl>
+                       <dl>
+                           <dt>走进千锋</dt>
+                           <dd>千锋简介</dd>
+                           <dd>千锋简介</dd>
+                           <dd>千锋简介</dd>
+                           <dd>千锋简介</dd>
+                       </dl>
+                       <dl>
+                           <dt>走进千锋</dt>
+                           <dd>千锋简介</dd>
+                           <dd>千锋简介</dd>
+                           <dd>千锋简介</dd>
+                       </dl>   
+
+                </div>
+                <div class="links2"></div>
+                <div class="links3"></div>
+            </div>
+        </div>
+        <div id="qfooter">
+            <div class="container">
+                <p>加快构建了&nbsp;客房的 价格开 房间个空 间分隔发 动机可供接口附近个 空间<a href="#">站长统计</a><a href="#">百度统计</a></p>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

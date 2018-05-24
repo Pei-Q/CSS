@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background: red;
+            margin:150px auto;
+            /*4.扭曲变换 transform:skew(x轴偏移角度，y轴偏移角度)
+                *transform:skewX(x轴偏移角度）
+                *transform:skewY(y轴偏移角度）
+
+
+            */
+            /*transition:transform 3s;*/
+            transform:skewX(30deg) skewY(30deg);
+
+        }
+        div:hover{
+            /*transform:skew(30deg,30deg);*/
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

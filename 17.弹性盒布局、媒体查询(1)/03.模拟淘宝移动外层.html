@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        body,html{height: 100%;}
+        .father{height: 100%;display:flex;flex-direction: column;}
+        .father .son1{height: 100px;background: red;}
+        .father .son2{flex:1;background: green;display:flex;}
+        .father .son2 .nav{width: 100px;background: pink;}
+        .father .son2 .section{flex:1;background: skyblue;}
+        .father .son2 .aside{width: 100px;background: orange;}
+        .father .son3{height: 100px;background: blue;}
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="son1"></div>
+        <div class="son2">
+            <div class="nav"></div>
+            <div class="section"></div>
+            <div class="aside"></div>
+        </div>
+        <div class="son3"></div>
+    </div>
+</body>
+</html>

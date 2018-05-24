@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        /*1.  :checked 被选中的表单元素添加样式*/
+        input:checked+span{
+            background: red;
+        }
+        /*2. :enabled 表单元素可用时出现样式*/
+        input:enabled{background: skyblue;}
+        /*3. :disabled 表单元素不可用时出现样式*/
+        input:disabled{background: #fff;}
+
+        /*4. ::selection 内容被选中时出现样式    
+             ::-moz-selection 兼容火狐*/
+        p::selection{
+            background: pink;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" />
+    <input type="password" disabled/>
+    <input type="checkbox" checked/><span>睡觉</span>
+    <p>点背,5辆公交车夹停了我。洒水车，喷水车。斜停。</p>
+</body>
+</html>

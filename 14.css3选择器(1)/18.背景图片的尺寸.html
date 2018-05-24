@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        div{
+            width: 300px;height: 400px;border:1px solid #ccc;
+            /*图大于容器尺寸时，会丢失一部分*/
+            background-image:url("../images/20.jpg");
+            background-repeat:no-repeat;
+            /*1.背景图片的尺寸background-size*/
+            /*（1）数值(百分比)：水平方向  垂直方向;(一般都会发生变形)*/
+            background-size:100% 100%;
+            /* (2) cover==>表示背景图片完全覆盖容器(一般图片都会发生丢失)*/
+            /*background-size:cover;*/
+            /*（3）contain==>表示背景图片被完全包含（一般容器会存在空白）*/
+            /*background-size:contain;*/
+
+            /*注意：轮播图一般都是用背景图（特别大）实现，通过background-size:cover保证背景图片完全覆盖容器，通过background-position:center实现背景图片的居中。*/
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

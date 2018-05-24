@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        .father{
+            width: 1000px;height: 600px;border:1px solid #ccc;
+            display: flex;
+            flex-direction:column;
+            /*5.justify-content 规定子项目在容器主轴的对齐方式
+                *flex-start （默认）在主轴方向的起点位置靠齐摆放
+                *flex-end 在主轴方向的终点位置靠齐摆放
+                *center 在主轴方向的中心位置靠齐摆放
+                *space-between 将空白区域平分在子项目之间
+                *space-around 将空白区域环绕在子项目两边。（容器两侧留白是子项目之间留白的一半）
+            */
+           justify-content: space-around;
+
+        }
+        .father .son{
+            width: 200px;
+            height: 100px;
+            background: red;
+        }
+        .father .son2{background: blue;}
+        .father .son3{background: green;}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="son son1"></div>
+        <div class="son son2"></div>
+        <div class="son son3"></div>
+    </div>
+</body>
+</html>

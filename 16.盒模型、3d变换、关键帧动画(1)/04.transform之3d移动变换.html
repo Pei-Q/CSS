@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        div{
+            position:relative;
+            transform-style:preserve-3d;
+        }
+        div img{position:absolute;left: 0;top: 0;}
+        /*(三)3d变换 transform
+            1.transform:translate3d(x,y,z) 3d移动变换
+                transform:translateZ(z);
+
+
+            3.平面或者3d： transform-style 
+                *【flat(默认平面)、preserve-3d保持3d变换】
+                *一定要用在变换元素的父元素上
+        */
+        div img:nth-child(1){
+            /*transform: translate3d(0, 0, 100px);*/
+            transform:translateZ(100px);
+        }
+        div img:nth-child(2){
+            transform: translate3d(0, 0, -100px);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <img src="../images/01.jpg" alt="" />
+        <img src="../images/02.jpg" alt="" />
+    </div>
+</body>
+</html>

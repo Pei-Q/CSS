@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        body{height: 3000px;}
+        .yeye{
+            width: 600px; height: 600px;background:#ccc;
+            position:absolute;
+        }
+        .baba{
+            width: 400px;height: 400px;background: red;
+            position:relative;
+        }
+        .erzi{
+            width: 150px;height: 150px;background: blue;
+            /*3.绝对定位position:absolute;*/
+            /*特点：
+                (1)相对于html或者最近的有定位(除了static)的父辈元素进行移动定位
+                (2)根据left（左）、right（右）、top(上)、bottom（下）进行移动，根据包含块的某条边往包含块中心移动为正值。
+                (3)绝对定位的元素会脱离标准流
+            补充：父元素最好使用相对定位position:relative;
+            */
+            position: absolute;
+            right:0px;
+            bottom:0px;
+        }
+        .nver{width: 200px;height: 200px;background: pink;}
+
+    </style>
+</head>
+<body>
+    <div class="yeye">
+        <div class="baba">
+            <div class="erzi"></div>
+            <div class="nver">  </div>
+        </div>
+    </div>
+</body>
+</html>

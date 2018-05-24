@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style> 
+        /*1.自定义字体*/
+        @font-face {
+            font-family: "tiantian";
+            src: url('../iconfont/iconfont.eot?t=1475997645'); /* IE9*/
+            src: url('../iconfont/iconfont.eot?t=1475997645#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('../iconfont/iconfont.woff?t=1475997645') format('woff'), /* chrome, firefox */
+            url('../iconfont/iconfont.ttf?t=1475997645') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+            url('../iconfont/iconfont.svg?t=1475997645#iconfont') format('svg'); /* iOS 4.1- */
+        }
+        /*2.使用自定义字体*/
+        .aa i{
+            font-family: "tiantian";
+            font-size:20px;
+            font-style: normal;
+        }
+        /*.bb i{
+            font-family: "tiantian";
+            font-size:20px;
+            font-style: normal;
+        }*/
+    </style>
+</head>
+<body>
+    <!-- 首先知道你下载了哪些字。demo.html查看.一般字体图标都是&#开头，以;结尾 -->
+    <div class="aa">我是一个没有追求的人，我只想躺在<i>&#xe667;</i>的床上，偶尔开着我的宝马<i>&#xe668;</i>,搂着我的小姐姐<i>&#xe66a;</i>。</div>
+
+    <!-- <div class="bb">虽然我没有<i>&#xe667;</i>，也没有<i>&#xe668;</i>，但是我有<i>&#xe66a;</i></div> -->
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        /*E:only-child 获取到既是父元素的惟一一个孩子，又是E元素*/
+        /*.baba div:only-child{
+            background: red;
+        }*/
+
+
+        /*E:only-of-type 满足为父元素的唯一一个E类型的孩子*/
+        .baba div:only-of-type{
+            background:red;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="baba">
+        <p class="nv">女儿</p>
+        <div class="erzi">儿子</div>
+    </div>
+</body>
+</html>

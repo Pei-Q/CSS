@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        ul,li{list-style: none;}
+        a{text-decoration: none;}
+        .elec_t{width: 1210px;height: 35px;background: orange;margin:0 auto;border-bottom: 1px solid #C81622;}
+        .elec_t h3{width: 126px;height: 35px;background:url('../images/logo.jpg') no-repeat;float: left;}
+        .elec_t ul{float: right;height: 34px;border:1px solid #ccc;border-bottom: 0 none;}
+        .elec_t ul li{float: left;}
+        .elec_t ul li a{display: block;height: 24px;padding-top: 10px;}
+        .elec_t ul li span{display:block;height: 14px;padding: 0 17px;border-right:1px solid #CCCCCC;font-size:12px;line-height: 14px;}
+        .elec_t ul li:hover a{border-right:1px solid #C81624;
+            border-left:1px solid #C81624;margin-left: -1px;
+            border-top:3px solid #C81624;margin-top: -1px;padding-top: 8px;border-bottom:1px solid #fff;}
+        .elec_t ul .last:hover a{margin-right: -1px;}
+        .elec_t ul li:hover span{border-right:0 none;}
+        /*若子元素与父元素都浮动了，则父元素可以不设置宽度。*/
+    </style>
+</head>
+<body>
+    <div class="elec_t">
+        <h3></h3>
+        <ul>
+            <li><a href="#"><span>热门</span></a></li>
+            <li><a href="#"><span>大家电</span></a></li>
+            <li><a href="#"><span>家用电器</span></a></li>
+            <li><a href="#"><span>家用电器</span></a></li>
+            <li><a href="#"><span>家用电器</span></a></li>
+            <li><a href="#"><span>家用电器</span></a></li>
+            <li><a href="#"><span>家用/电器</span></a></li>
+            <li><a href="#"><span>家用电</span></a></li>
+            <li class="last"><a href="#"><span style="border-right:0 none;">家用电器</span></a></li>
+        </ul>
+    </div>
+</body>
+</html>

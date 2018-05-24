@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        .bigbox{
+            width: 800px;
+            height: 200px;
+            /*background: pink;*/
+            margin:100px auto;
+            padding: 0 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items:center;
+        }
+        .bigbox .touzi{
+            width: 100px;
+            height: 100px;
+            background: #E7E7E7;
+            box-sizing:border-box;
+            padding: 5px;
+            border-radius: 8px;
+            box-shadow:0 -4px 0 0 #BBBBBB inset, 0 4px 0 0 #fff inset,-4px 0 0 0 #D7D7D7 inset,4px 0 0 0 #D7D7D7 inset;
+            display:flex;
+        }
+
+        .bigbox .touzi .dotted{
+            display:block;
+            width: 28px;
+            height: 28px;
+            background: #333333;
+            border-radius:50%;
+            box-shadow:0 -4px 0 0 #555 inset, 0 4px 0 0 #111 inset;
+        }
+        .bigbox .touzi .smallbox{
+            width: 28px;
+            /*background: red;*/
+            display:flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .bigbox .touzi:nth-child(1){
+            justify-content: center;
+            align-items: center;
+        }
+        /*.bigbox .touzi:nth-child(2),.bigbox .touzi:nth-child(3){*/
+        .bigbox .touzi2{
+            justify-content: space-between;
+        }
+        .bigbox .touzi2 .dotted:last-child{
+            align-self: flex-end;
+        }
+        .bigbox .touzi:nth-child(3) .dotted:nth-child(2){
+            align-self: center;
+        }
+        .bigbox .touzi4{
+            justify-content: space-between;
+        }
+        .bigbox .touzi:nth-child(5) .smallbox:nth-child(2){
+            justify-content: center;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="bigbox">
+        <div class="touzi">
+            <span class="dotted"></span>
+        </div>
+        <div class="touzi touzi2">
+            <span class="dotted"></span>
+            <span class="dotted"></span>
+        </div>
+        <div class="touzi touzi2">
+            <span class="dotted"></span>
+            <span class="dotted"></span>
+            <span class="dotted"></span>
+        </div>
+        <div class="touzi touzi4">
+            <div class="smallbox">
+                <span class="dotted"></span>
+                <span class="dotted"></span>
+            </div>
+            <div class="smallbox">
+                <span class="dotted"></span>
+                <span class="dotted"></span>
+            </div>
+        </div>
+        <div class="touzi touzi4">
+            <div class="smallbox">
+                <span class="dotted"></span>
+                <span class="dotted"></span>
+            </div>
+            <div class="smallbox">
+                <span class="dotted"></span>
+
+            </div>
+            <div class="smallbox">
+                <span class="dotted"></span>
+                <span class="dotted"></span>
+            </div>
+        </div>
+        <div class="touzi touzi4">
+            <div class="smallbox">
+                <span class="dotted"></span>
+                <span class="dotted"></span>
+                <span class="dotted"></span>
+            </div>
+           
+            <div class="smallbox">
+                <span class="dotted"></span>
+                <span class="dotted"></span>
+                <span class="dotted"></span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

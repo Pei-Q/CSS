@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        .dv1{
+            width: 200px;height: 200px;background: red;
+            /*2.相对定位 position:relative;*/
+            /*特点:
+                (1)相对定位是根据自己本身的位置进行定位移动的
+                (2)根据left、right、top、bottom的值进行移动,相对于自己的某条边往元素中心移动为正值。
+                (3)相对定位的元素不脱离标准流。（灵魂出窍）
+            */
+            position:relative;
+            left:100px;
+            top:100px;
+        }
+        .dv2{width: 200px;height: 200px;background: blue;}
+
+
+    </style>
+</head>
+<body>
+    <div class="dv1"></div>
+    <div class="dv2"></div>
+</body>
+</html>

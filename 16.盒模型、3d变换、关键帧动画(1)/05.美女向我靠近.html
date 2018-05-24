@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        div{
+            width: 220px;
+            height: 220px;
+            border:1px solid #ccc;
+            margin:150px auto;
+            transform-style:preserve-3d;
+            /*4.设置观察的距离，景深 perspective(变换元素的父元素上)*/
+            perspective:10px;
+        }
+        div img{transition:transform 3s;}
+        div:hover img{
+            transform:translateZ(10px);
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <img src="../images/01.jpg" alt="" />
+    </div>
+</body>
+</html>

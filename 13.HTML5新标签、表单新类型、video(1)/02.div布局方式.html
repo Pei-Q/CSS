@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        #header,#footer{height: 40px;background: #ccc;}
+        #nav{height: 40px;background: skyblue;margin-top: 10px;}
+        #main{margin: 10px 0;overflow:hidden;}
+        #main .article{width: 59%;height: 200px;float: left;background: red;margin-right:1%;}
+        #main .article .section{width: 98%;height: 100px;background: green;margin:50px auto;}
+        #main .sidebar{width: 40%;height: 200px;float: right;background: blue;}
+    </style>
+</head>
+<body>
+    <div id="header"></div>
+    <div id="nav"></div>
+    <div id="main">
+        <div class="article">
+            <div class="section"></div>
+        </div>
+        <div class="sidebar"></div>
+    </div>
+    <div id="footer"></div>
+</body>
+</html>

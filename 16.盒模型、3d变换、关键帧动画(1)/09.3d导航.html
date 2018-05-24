@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        ul,li{list-style: none;}
+        .tab{overflow: hidden;}
+        .tab li{
+            float: left;position:relative;width: 150px;height: 40px;
+            transform-style:preserve-3d;transition:transform 2s;
+        }
+        .tab li:nth-child(2){transition-delay: 0.2s;}
+        .tab li:nth-child(3){transition-delay: 0.4s;}
+
+        .tab li:nth-child(4){transition-delay: 0.6s;}
+        .tab li:nth-child(5){transition-delay: 0.8s;}
+
+
+        .tab li span{
+            display: block;width: 150px;height: 40px;background: yellow;
+            position: absolute;left: 0;top: 0;
+            /*字体*/font-size: 14px;text-align: center; line-height: 40px;
+        }
+        .tab li span:nth-child(1){background: green;transform: translateY(-20px) rotateX(90deg);}
+        .tab li span:nth-child(2){transform:translateZ(20px);}
+        .tab:hover li{transform: rotateX(-90deg);}
+
+
+
+    </style>
+</head>
+<body>
+    <ul class="tab">
+        <li><span>html5开发</span><span>移动与前端开发</span></li>
+        <li><span>html5开发</span><span>移动与前端开发</span></li>
+        <li><span>html5开发</span><span>移动与前端开发</span></li>
+        <li><span>html5开发</span><span>移动与前端开发</span></li>
+        <li><span>html5开发</span><span>移动与前端开发</span></li>
+    </ul>
+</body>
+</html>

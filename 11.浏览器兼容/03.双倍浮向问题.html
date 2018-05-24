@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        /*在ie6当中，若是浮动的方向（例如left）设置了margin（margin-left）,这个值会按两倍显示*/
+        /*解决方式：设置display:inline;*/
+        .dv1{width: 200px;height: 200px;background: red;float: left;margin-left:100px;display:inline;}
+        .dv2{width: 200px;height: 200px;background: blue;float: left;}
+
+
+    </style>
+</head>
+<body>
+    <div class="dv1"></div>
+    <div class="dv2"></div>
+</body>
+</html>

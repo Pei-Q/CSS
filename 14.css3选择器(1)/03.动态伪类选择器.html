@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        /*1. :link 表示锚链接被链接前的样式*/
+        .aa:link{color:red;}
+        /*2 :visited 表示锚链接被链接后的样式*/
+        .aa:visited{color:pink;}
+        /*3. :hover 表示鼠标悬停在元素上出现样式*/
+        .aa:hover{color:#ccc;}
+        /*4. :active 表示鼠标点击元素时出现样式*/
+        .aa:active{color:skyblue;}
+
+        /*5. :focus 表示表单元素被聚焦时出现样式*/
+        input:focus{background: red;}
+
+        /*去除输入框高亮*/
+        /*input{outline:none;}*/
+    </style>
+</head>
+<body>
+    <a href="#" class="aa">哈哈哈</a>
+    <input type="text" autofocus />
+    <input type="text" />
+</body>
+</html>

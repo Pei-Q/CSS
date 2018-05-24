@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        .baba{width: 600px;height: 600px;border:1px solid #ccc;/*text-align:center;*/}
+        .baba .erzi{display:inline-block;width: 200px;height: 200px;background: red;vertical-align: middle;margin:0 auto;}
+        .baba .chizi{display:inline-block;height: 600px;vertical-align: middle;}
+        /*子元素如何在父元素中垂直居中？
+        （1）给子元素添加一个同级元素（宽度为0，高度为父元素的高度），目的是做把参照的尺子
+        （2）给子元素及尺子加display:inline-block;
+        （3）设置vertical-align:middle;
+
+
+        */
+    </style>
+</head>
+<body>
+    <div class="baba">
+        <div class="erzi"></div>
+        <div class="chizi"></div>
+    </div>
+</body>
+</html>

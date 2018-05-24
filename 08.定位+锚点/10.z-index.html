@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        .dv1{
+            width: 200px;height: 200px;background: red;
+            position:relative;
+            left:100px;
+            top:100px;
+            /*(二)层级 z-index*/
+            /*默认情况下，定位>标准流*/
+            /*一定要设置在有定位的元素上。可以设置负数*/
+            z-index:-10000;
+
+
+        }
+        .dv2{
+            width: 200px;height: 200px;background: blue;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="dv1"></div>
+    <div class="dv2"></div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        div{
+            width: 300px;height: 300px;background: #ccc;
+            transform-style: preserve-3d;
+        }
+        div img{
+            transition: all 3s;
+        }
+        div:hover img{
+            /*2.transform:rotate3d(x,y,z,角度)  
+                * x、y、z取值为0（不旋转）或1（旋转）
+                transform:rotateX(角度) 
+                transform:rotateY(角度)
+                transform:rotateZ(角度)
+                左手定律： 大拇指指向轴的方向，手指弯曲的方向为旋转角度的正值
+                *多个变换，属性值之间用空格隔开
+            */
+            /*transform: rotateZ(30deg);*/
+            /*transform:rotate3d(1, 1, 1, 30deg);*/
+            transform:translateX(200px) rotateX(30deg) rotateY(60deg);
+
+        }
+        
+
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <img src="../images/z.jpg" alt="" />
+    </div>
+</body>
+</html>

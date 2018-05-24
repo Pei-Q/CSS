@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        .father{
+            width: 1000px;
+            height: 600px;
+            border:1px solid #ccc;
+            display:flex;
+            flex-wrap:wrap;
+            align-items: baseline;
+            /*6.align-items子项目在侧轴方向的对齐方式(单侧行)
+                * stretch 若是子项目在侧轴没设置大小，则默认被拉伸。
+                * flex-start 若是子项目在侧轴方向设置了大小，则在当前行的起点位置开始摆放
+                * flex-end 在当前行的终点位置开始摆放
+                * center 在当前行的中间位置开始摆放
+                * baseline 在当前行以基线对齐
+            */
+        }
+        .father .son1{
+            width: 50%;height: 200px;background: red;/*align-self:flex-end;*/
+            /*2.align-self 单个子项目在侧轴方向的对齐方式（同align-items）*/
+        }
+        .father .son2{width: 50%;height: 200px;background: blue;}
+        .father .son3{width: 50%;height: 200px;background: green;}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="son1">rglrgl</div>
+        <div class="son2"></div>
+        <div class="son3"></div>
+    </div>
+</body>
+</html>

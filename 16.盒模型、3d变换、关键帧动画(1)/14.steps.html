@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;height: 200px;background: red;
+            /*steps(n,end) 将动画每一帧分成n步
+                *第二个参数默认是end，可省略。代表每一步都以上一步的状态停留 
+                *第二个参数可以是start。代表每一步都以下一步的状态停留
+            */
+            animation:change 8s  steps(2,start) forwards;
+        }
+        @keyframes change{
+            /*0-50%分成2步：200*200-400*400、400*400-600*600*/
+            /*50%-100%分成2步：600*600-500*500、500*500-400*400*/
+            /*end:
+                200*200\400*400\600*600\500*500
+            /*start:
+                400*400/600*600/500*500/400*400
+            */
+            0%{}
+            50%{width: 600px;height: 600px;}
+            100%{width: 400px;height: 400px;}
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

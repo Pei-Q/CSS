@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        .father{width: 1000px;height: 600px;border: 1px solid #ccc;display: flex;}
+        .father .son1{width: 200px;background: red;
+            /*3.order 设置子项目的显示顺序。没写order属性的会排在前面。写了order的根据大小，谁小谁放在前面*/
+            order:1;
+
+        }
+        .father .son2{width: 200px;background: blue;order:8;}
+        .father .son3{width: 200px;background: green;}
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="son1"></div>
+        <div class="son2"></div>
+        <div class="son3"></div>
+    </div>
+</body>
+</html>

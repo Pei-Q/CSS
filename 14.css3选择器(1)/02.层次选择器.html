@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        /*1.后代选择器*/
+        .father p{color:red;}
+        /*2.子代选择器*/
+        .father>p{font-size: 100px;}
+        /*3.相邻兄弟选择器，通过+将基本选择器隔开.
+        E+F:表示被获取到F元素一定是E元素的下一个兄弟元素
+        */
+        .father .erzi1+p{background: blue;}
+        /*4.兄弟选择器：通过~将基本选择器隔开*/
+        /*E~F :获取E元素后面的所有兄弟元素F*/
+        .father .erzi~p{
+            font-style:italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="erzi">diverzi</div>
+        <p class="erzi1">perzi</p>
+        <!-- <a href="#">hkdhg</a> -->
+        <p>pnver</p>
+        <div class="nver">
+            <p class="waisun">房价的开发攻坚克</p>
+        </div>
+    </div>
+</body>
+</html>

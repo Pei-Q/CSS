@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        /*1.自定义字体*/
+        @font-face {font-family: "h5_1801";
+          src: url('../iconfont/iconfont.eot?t=1475997645'); /* IE9*/
+          src: url('../iconfont/iconfont.eot?t=1475997645#iefix') format('embedded-opentype'), /* IE6-IE8 */
+          url('../iconfont/iconfont.woff?t=1475997645') format('woff'), /* chrome, firefox */
+          url('../iconfont/iconfont.ttf?t=1475997645') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+          url('../iconfont/iconfont.svg?t=1475997645#iconfont') format('svg'); /* iOS 4.1- */
+        }
+        /*2.写好类，告诉字体图标用这种字体*/
+        .iconfont {
+          font-family:"h5_1801" !important;
+          font-style:normal;
+          font-size:20px;
+        }
+        /*添加字体图标*/
+        .fangzi:before { content: "\e667"; }
+        .baoma:before { content: "\e668"; }
+        .meinv:before { content: "\e66a"; }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="aa">我是一个没有追求的人，我只想躺在<i class="iconfont fangzi"></i>的床上，偶尔开着我的宝马<i class="iconfont baoma"></i>,搂着我的小姐姐<i class="iconfont meinv"></i>。</div>
+</body>
+</html>

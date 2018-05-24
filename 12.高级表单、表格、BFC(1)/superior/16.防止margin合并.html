@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        /*防止margin合并：若想两个垂直摆放的元素不发生margin合并，则把其中一个元素的样式设置给它的子元素，同时该元素还要设置成独立的bfc区域（overflow:hidden;）*/
+        .dv1{
+            overflow:hidden;
+        }
+        .dv1 p{width: 200px;height: 200px;background: red;margin-bottom: 100px;}
+        .dv2{width: 200px;height: 200px;background: blue;margin-top: 200px;}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="dv1">
+        <p></p>
+    </div>
+    <div class="dv2"></div>
+</body>
+</html>

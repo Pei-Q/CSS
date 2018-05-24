@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        div{
+            width: 400px;
+            height: 800px;
+            /*2.径向渐变：
+                （1）-webkit-radial-gradient(圆心,颜色 渐变开始的位置[,...])
+                    *圆心:水平方向  垂直方向;可以用数值还可以用方位（left...）
+                (2) -webkit-radial-gradient(圆心,形状||大小,渐变开始的位置[,...])
+                    *形状: circle圆    ellipse椭圆形(默认)
+                    *大小：closest-side最近的边    farthest-side：最远边；
+                        closest-corner：最近角； farthest-corner：最远角（默认值）
+            */
+            background:-webkit-radial-gradient(0 0,red 15%,blue 50%,green 100%);
+            background:-webkit-radial-gradient(50% 50%,circle farthest-side,red 15%,blue 50%,green 100%);
+
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        /*1.E[attr] 表示获取到存在attr属性的E元素*/
+        input[value]{
+            background: red;
+        }
+        /*2.E[attr="val"] 表示获取到attr属性值为val的E元素*/
+        input[value="abc"]{
+            font-style:italic;
+        }
+        /*3.E[attr*="val"] 表示获取到attr属性值包含val的E元素*/
+        input[value*="bcd"]{
+            color:blue;
+        }
+
+        /*4.E[attr^="val"] 表示获取到attr属性值以val开头的E元素*/
+        input[value^="cd"]{
+            font-size:100px;
+        }
+        /*5.E[attr$="val"] 表示获取到attr属性值以val结尾的E元素*/
+        input[value$="d"]{
+            font-size:100px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <input type="text" value="abc" />
+    <input type="text" value="abcd" />
+    <input type="text" value="bcd" />
+    <input type="text" value="bcde" />
+    <input type="text" value="cdef" />
+    <input type="text" />
+
+</body>
+</html>

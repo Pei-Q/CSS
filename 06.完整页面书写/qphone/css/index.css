@@ -1,0 +1,51 @@
+#qmain{width: 100%;height: 350px;background-color:#F5F5F5;}
+#qmain .container{/*width: 1000px;*/height: 315px;/*margin:0 auto;*/padding-top:35px;}
+#qmain .main_cont{width:1000px;height: 288px;background: red;}
+#qmain .main_cont .main_c0{width: 249px;height: 288px;border-right:1px solid #DDE6F0;float: left;text-align:center;}
+/*字体、line-height*/
+#qmain .main_cont .main_c0 h3{line-height: 28px;font-size: 22px;}
+#qmain .main_cont .main_c0 h4{line-height: 44px;font-size: 14px;}
+#qmain .main_cont .main_c0 ul li{line-height: 18px;font-size:14px;}
+
+
+
+
+#qnews{width: 100%;height: 309px;background-color:#fff;}
+#qnews .container{/* width: 1000px;*/height: 268px;/*margin:0 auto;*/padding-top: 41px;}
+#qnews .news_cont{width:1000px;height: 226px; background: red;}
+#qnews .news_c1{width: 301px;height: 226px;float: left;}
+#qnews .news_c2{width: 322px;height: 226px;border-right:1px solid #DCDEDF;float: left;padding: 0 17px 0 14px;}
+#qnews .news_c2 h3{line-height: 28px;font-size: 20px;}
+#qnews .news_c2 h4{line-height: 36px;font-size: 16px;}
+#qnews .news_c2 p{line-height: 20px;font-size:12px;padding-bottom: 9px;border-bottom:1px dashed #CCCCCC;}
+#qnews .news_c2 ul{margin-top: 10px;}
+#qnews .news_c2 ul li{line-height: 24px;font-size: 14px; padding-left: 14px;background:url("../images/arror.png") no-repeat 0 center;}
+
+
+
+
+#qnews .news_c3{width: 332px;height: 226px;background: blue;float: right;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

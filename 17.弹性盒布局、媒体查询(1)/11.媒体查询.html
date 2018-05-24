@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <style>
+        /*768px以下pink，768-992pxred，992px-1200pxblue，1200px+green*/
+        div{height: 400px;background: pink;}
+
+        /*（三）媒体查询*/
+        /*1.语法 @media screen and (条件){css语法}*/
+        /*2.min-width 当窗口宽度大于最小宽度时生效.按照从小到大的条件写
+            max-width 当窗口宽度小于最大宽度时生效.按照从大到小的条件写
+        */
+        /*768-992 red*/
+        @media screen and (min-device-width:768px){
+            div{background:red;}
+        }
+        /*992-1200 blue*/
+        @media screen and (min-device-width:992px){
+            div{background: blue;}
+        }
+        /*1200+ green*/
+        @media screen and (min-device-width:1200px){
+            div{background: green;}
+        }
+        
+        
+       
+
+
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

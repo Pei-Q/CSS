@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        .father{
+            width: 1000px;
+            height: 600px;
+            border:1px solid #ccc;
+            display: flex;
+            /*3.flex-wrap 伸缩换行
+                *nowrap默认不换行
+                *wrap 换行
+            */
+            /*flex-wrap: wrap;*/
+           /*4. flex-flow:flex-direction||flex-wrap;同时设置主轴方向及换行*/
+           flex-flow:column wrap;
+
+        }
+        .father .son{
+            width: 200px;
+            height: 50%;
+            background: red;
+            /*侧轴方向的大小会默认拉伸，若是设置了大小，会在当前行的开始位置摆放。*/
+        }
+        .father .son2{background: blue;}
+        .father .son3{background: green;}
+
+
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="son son1"></div>
+        <div class="son son2"></div>
+        <div class="son son3"></div>
+    </div>
+</body>
+</html>

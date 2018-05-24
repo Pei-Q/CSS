@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+         /*子代选择器：将多个基本选择器用>隔开，表示后一个元素是前一个的儿子。（ie8以下不支持）*/
+        *{margin: 0;padding: 0;}
+        ul,li{list-style: none;}
+        a{text-decoration: none;}
+        .tab1{width: 404px;height: 40px;margin:100px auto;}
+        .tab1>li{float: left;margin-right: 1px;position:relative;}
+        .tab1>li>a{
+            display: block;width: 100px;height: 40px;background: #ccc;
+            /*字体*/font-size:14px;color:#000;text-align: center;line-height: 40px;
+        }
+        .tab1 .tab2{position:absolute;top: 41px;left: 10px;display:none;}
+        .tab1 .tab2 a{display:block;width: 80px;height: 40px;background: green;color:yellow;text-align:center;line-height: 40px;}
+        .tab1>li:hover .tab2{display:block;}
+    </style>
+</head>
+<body>
+    <ul class="tab1">
+        <li>
+            <a href="#">美食</a>
+            <ul class="tab2">
+                <li><a href="#">卫龙辣条</a></li>
+                <li><a href="#">泡椒凤爪</a></li>
+                <li><a href="#">七宝一丁</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">电影</a>
+            <ul class="tab2">
+                <li><a href="#">前任1</a></li>
+                <li><a href="#">前任2</a></li>
+                <li><a href="#">前任3</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">音乐</a>
+            <ul class="tab2">
+                <li><a href="#">说散就散</a></li>
+                <li><a href="#">分手快乐</a></li>
+                <li><a href="#">爱情买卖</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">宠物</a>
+            <ul class="tab2">
+                <li><a href="#">哈士奇</a></li>
+                <li><a href="#">阿拉斯加</a></li>
+                <li><a href="#">中华田园犬</a></li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

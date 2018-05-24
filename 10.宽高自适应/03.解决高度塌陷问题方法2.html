@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/base.css" />
+    <style>
+        .baba{width: 800px;background: red;}
+        .baba .dv1{width: 200px;height: 200px;background: #ccc;float: left;}
+        .baba .dv2{width: 300px;height: 300px;background: green;float: left;}
+        /*(2)给父元素添加最后的子元素(块级元素)，添加三句代码{height:0;clear:both;overflow:hidden;}.缺点：增加了很多标签，占内存。*/
+        /*.baba .dv3{
+            height: 0;
+            clear:both;
+            overflow:hidden;
+        }*/
+        /*(3)伪元素清除法（万能清除法）:模拟父元素最后一个子元素的存在,添加代码{content:"";
+            display:block;height: 0;clear:both;overflow:hidden;visibility:hidden;zoom:1;}.
+            使用方式:一般这个代码直接copy到base.css里面，然后给需要清除浮动的父元素添加类名clearfix
+        */
+        /*.clearfix::after{
+            content:"";
+            display:block;
+            height: 0;
+            clear:both;
+            overflow:hidden;
+            visibility:hidden;
+            zoom:1;
+        }*/
+        
+
+    </style>
+</head>
+<body>
+   <div class="baba clearfix">
+       <div class="dv1"></div>
+       <div class="dv2"></div>
+       <!-- <div class="dv3"></div> -->
+   </div> 
+   <div class="baba2 clearfix">
+       
+   </div>
+</body>
+</html>

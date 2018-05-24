@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        article, aside, canvas, details,main,footer, header, hgroup, menu, nav, section
+        { 
+            display: block;
+         }
+        #q_header,#q_footer{height: 40px;background: #ccc;}
+        #q_nav{height: 40px;background: skyblue;margin-top: 10px;}
+        #q_main{margin: 10px 0;overflow:hidden;}
+        #q_main .main_l{width: 59%;height: 200px;float: left;background: red;margin-right:1%;}
+        #q_main .main_l .main_l_cont{width: 98%;height: 100px;background: green;margin:50px auto;}
+        #q_main .main_r{width: 40%;height: 200px;float: right;background: blue;}
+    </style>
+    <!-- [if lt IE 9] -->
+        <script src="../js/html5shiv.min.js"></script>
+    <!-- [endif] -->
+</head>
+<body>
+    <!--1.布局标签： header、nav、main、acticle、section、aside、footer -->
+    <header id="q_header"></header>
+    <nav id="q_nav"></nav>
+    <main id="q_main">
+        <article class="main_l">
+            <section class="main_l_cont"></section>
+        </article>
+        <aside class="main_r"></aside>
+    </main>
+    <footer id="q_footer"></footer>
+
+
+    <!-- <div id="aa"></div> -->
+    <!-- <aa id="q_aa"></aa> -->
+
+</body>
+</html>

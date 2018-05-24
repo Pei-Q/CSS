@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Document</title>
+  <style>
+    *{margin: 0;padding: 0;}
+    ul,li{list-style: none;}
+    a{text-decoration: none;}
+    .tab1{}
+    .tab1 li{float: left;}
+    .tab1 li a{display: block;height: 22px;background:url("../images/sprites_left.png") no-repeat;padding-left: 26px;}
+    .tab1 li a span{display:block;height: 22px;background:url("../images/sprites_right.gif") right top no-repeat;padding-right: 26px;}
+    .tab1 .li2 a{background-position: -26px 0;}
+    .tab1 .li3 a{background-position: -52px 0;}
+    .tab1 .li4 a{background-position: -78px 0;}
+
+    .tab1 li:hover a{background-position: 0 -22px;}
+    .tab1 li:hover span{background-position:right -22px;}
+
+    .tab1 .li2:hover a{background-position: -26px -22px;}
+    .tab1 .li3:hover a{background-position: -52px -22px;}
+    .tab1 .li4:hover a{background-position: -78px -22px;}
+
+
+  </style>
+</head>
+<body>
+    <ul class="tab1">
+        <li><a href="#"><span>哈哈</span></a></li>
+        <li class="li2"><a href="#"><span>哈哈哈哈</span></a></li>
+        <li class="li3"><a href="#"><span>哈哈哈哈哈</span></a></li>
+        <li class="li4"><a href="#"><span>哈哈哈哈啊</span></a></li>
+    </ul>
+</body>
+</html>  

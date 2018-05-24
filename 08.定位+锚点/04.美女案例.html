@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        body{height: 3000px;}
+        .box{
+            width: 300px;height: 300px;border:1px solid #ccc;
+            position:relative;
+        }
+        .box img{width: 300px;height: 300px;}
+        .box p{
+            width: 300px;height: 40px;background: yellow;
+            text-align:right;line-height: 40px;
+            /*子元素p根据父元素.box进行定位*/
+            position:absolute;
+            left: 0;
+            top:130px;
+        }
+        .box p span{
+            display: block;width: 40px;height: 40px;background: purple;
+            /*子元素span根据父元素p进行定位*/
+            position:absolute;
+            left: 0;
+            top: 0;
+            text-align:center;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="../images/16.jpg"  />
+        <p><span>1</span>点我有惊喜！</p>
+    </div>
+</body>
+</html>

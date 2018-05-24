@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        /*rem:以根部html的字体大小为基准*/
+        html{font-size:20px;}
+        div{
+            width:20rem;
+            height:20rem;
+            background: red;
+        }
+
+        @media screen and (min-width:992px){
+           html{font-size: 40px;}
+        }
+        /*得出启示：rem布局中，所有单位变成rem，只要我们改变根部字体大小，所有元素的大小就会跟着变。*/
+    </style>   
+</head>
+<body>
+    <div>你好！</div>
+</body>
+</html>

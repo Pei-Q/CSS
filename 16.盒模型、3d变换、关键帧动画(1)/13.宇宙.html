@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        ul,li{list-style: none;}
+        body{height: 100%;background:url("../images/bg.jpg");}
+        .yuzhou{width: 240px;height: 240px;position:relative;margin:100px auto;}
+        .yuzhou li{position:absolute;left: 50%;top: 50%;transform: translate(-50%,-50%) rotate(0);border-radius:50%;animation: xuanzhuan 3s linear infinite;}
+        .yuzhou li:nth-child(1){width: 60px;height: 60px;background: yellow;}
+        .yuzhou li:nth-child(2){width: 120px;height: 120px;border:1px solid #ccc;}
+        .yuzhou li:nth-child(3){width: 180px;height: 180px;border:1px solid #ccc;animation-duration:8s;}
+        .yuzhou li:nth-child(4){width: 240px;height: 240px;border:1px solid #ccc;animation-duration: 12s;}
+        .yuzhou li span{display:block;width: 16px;height: 16px;background: yellow;
+            position:absolute;left: 50%;transform:translate(-50%,-50%) rotate(0);border-radius:50%;animation: xuanzhuan 2s linear infinite;
+        }
+        .yuzhou li span i{display:block;width: 8px;height: 8px;background: #fff;
+            position:absolute;left: 50%;transform:translate(-50%,-9px);border-radius:50%;
+        }
+        @keyframes xuanzhuan{
+            0%{}
+            100%{transform:translate(-50%,-50%) rotate(360deg);}
+        }
+    </style>
+</head>
+<body>
+    <ul class="yuzhou">
+        <li></li>
+        <li><span></span></li>
+        <li><span><i></i></span></li>
+        <li><span></span></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        ul,li{list-style: none;}
+        a{text-decoration: none;}
+        .tab1{width: 440px;height: 40px;border-bottom: 1px solid #A0A0A0;padding-left: 40px;}
+        .tab1 li{float: left;margin-top:4px;margin-right: 9px;}
+        .tab1 li a{
+            display: block;
+            width: 72px;
+            height: 35px;
+            border:1px solid #D2D2D2;
+            border-bottom: 0 none;
+            line-height: 35px;
+            text-align: center;
+            color:#9B9FA2;
+            font-size:12px;
+        }
+        .tab1 li:hover{margin-top: 0;}
+        .tab1 li:hover a{padding-top: 4px;border-color:#9C9C9C;color:#695863;border-bottom: 1px solid #fff;}
+        /*若子元素与父元素存在上间距，子元素如果都浮动了，则可以给子元素加margin-top*/
+    </style>
+</head>
+<body>
+    <ul class="tab1">
+        <li><a href="#">tab one</a></li>
+        <li><a href="#">tab two</a></li>
+        <li><a href="#">tab three</a></li>
+        <li><a href="#">tab four</a></li>
+    </ul>
+</body>
+</html>

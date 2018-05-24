@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        ul,li{list-style: none;}
+        a{text-decoration: none;}
+        .tab1{height: 40px;width: 404px;margin:100px auto;}
+        .tab1>li{float: left;margin-right: 1px;position:relative;}
+        .tab1 li a{
+            display: block;width: 100px;height: 40px;background: #ccc;
+            /*字体*/font-size: 14px;color:#000;line-height: 40px;text-align: center;
+        }
+       
+        .tab1 .tab2{
+            width: 100px;
+            position:absolute;left: 0;top: 41px;
+            display:none;
+        }
+        .tab1 .tab2>li{position:relative;}
+        .tab1 .tab3{width: 303px;height: 40px;position:absolute;left: 101px;top: 0;display:none;}
+        .tab1 .tab3>li{float: left;margin-right: 1px;}
+        .tab1 .tab3>li>a{background:green;color:yellow;}
+        /*悬停在.tab1后代li时，改变该li的子代a*/
+        .tab1 li:hover>a{background:#000;color:#fff;}
+        .tab1>li:hover .tab2{display:block;}
+        .tab1 .tab2>li:hover .tab3{display:block;}
+        /*.tab1 .tab2>li:hover>a{background:#000;color:#fff;}*/
+        /*.tab1 .tab2 a{ display: block;width: 100px;height: 40px;background: #ccc;
+            font-size: 14px;color:#000;line-height: 40px;text-align: center;}*/
+
+
+    </style>
+</head>
+<body>
+    <ul class="tab1">
+        <li>
+            <a href="#">电影</a>
+            <ul class="tab2">
+                <li>
+                    <a href="#">前任1</a>
+                    <ul class="tab3">
+                        <li><a href="#">陈柏霖</a></li>
+                        <li><a href="#">吴亦凡</a></li>
+                        <li><a href="#">吴彦祖</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">前任2</a>
+                    <ul class="tab3">
+                        <li><a href="#">陈柏霖</a></li>
+                        <li><a href="#">吴亦凡</a></li>
+                        <li><a href="#">吴彦祖</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">前任3</a>
+                    <ul class="tab3">
+                        <li><a href="#">陈柏霖</a></li>
+                        <li><a href="#">吴亦凡</a></li>
+                        <li><a href="#">吴彦祖</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">音乐</a>
+            <ul class="tab2">
+                <li><a href="#">说散就散</a></li>
+                <li><a href="#">分手快乐</a></li>
+                <li><a href="#">爱情买卖</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">宠物</a>
+            <ul class="tab2">
+                <li><a href="#">哈士奇</a></li>
+                <li><a href="#">阿拉斯加</a></li>
+                <li><a href="#">中华田园犬</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">美食</a>
+            <ul class="tab2">
+                <li><a href="#">卫龙辣条</a></li>
+                <li><a href="#">泡椒凤爪</a></li>
+                <li><a href="#">七宝一丁</a></li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background: red;
+            margin:200px auto;
+            transition:transform 3s;
+            /*5.变换的基准点 transform-origin:水平方向 垂直方向;
+                *数值、百分比
+                *方位
+             */
+            transform-origin: left top;
+
+        }
+        div:hover{
+            transform:rotate(180deg);
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

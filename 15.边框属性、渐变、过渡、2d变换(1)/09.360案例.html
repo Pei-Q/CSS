@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        html,body{height: 100%;}
+        section{height: 100%;background: skyblue;overflow:hidden;}
+        section p{
+            font-size:100px;color:#fff;letter-spacing: 40px;text-align:center;margin-top:100px;opacity: 0.3;
+            /*谁的属性变了，给谁加transition*/
+            transition:all 3s;
+        }
+        section:hover p{
+            opacity:1;
+            letter-spacing: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <p>4亿网友共同信赖</p>
+    </section>
+</body>
+</html>

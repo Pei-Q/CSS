@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        ul,li{list-style: none;}
+        .box{width: 882px;border:10px solid #ccc;overflow:hidden;margin:100px auto;}
+        .box ul{width: 1764px;overflow:hidden;animation:move 6s linear infinite;}
+        .box ul li{float: left;}
+        .box ul li img{display: block;width: 126px;height: 86px;}
+        @keyframes move{
+            0%{}
+            100%{
+                transform: translateX(-882px);
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <ul>
+            <li><img src="../images/1.jpg" alt="" /></li>
+            <li><img src="../images/2.jpg" alt="" /></li>
+            <li><img src="../images/3.jpg" alt="" /></li>
+            <li><img src="../images/4.jpg" alt="" /></li>
+            <li><img src="../images/5.jpg" alt="" /></li>
+            <li><img src="../images/6.jpg" alt="" /></li>
+            <li><img src="../images/7.jpg" alt="" /></li>
+            <li><img src="../images/1.jpg" alt="" /></li>
+            <li><img src="../images/2.jpg" alt="" /></li>
+            <li><img src="../images/3.jpg" alt="" /></li>
+            <li><img src="../images/4.jpg" alt="" /></li>
+            <li><img src="../images/5.jpg" alt="" /></li>
+            <li><img src="../images/6.jpg" alt="" /></li>
+            <li><img src="../images/7.jpg" alt="" /></li>
+        </ul>
+    </div>
+</body>
+</html>
