@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+</head>
+<body>
+    <!-- 1.表单form[action提交到的后台地址][method提交方式(get、post)]
+    [name表单名字] -->
+    <form action="#" method="get" name="love">
+        <!-- 2.表单控件 input [type表单控件的类型]
+        [name给同一组的表单控件加上相同的名字(写了名字就能提交)]
+        [value 给表单控件添加内容][checked 默认选中]-->
+        <!-- type的属性值：text文本框 password密码框 radio单选框 checkbox多选框 submit提交按钮 button普通按钮 reset重置按钮-->
+        用户名:<input type="text" name="uname" value="请输入您的大名"/> <br />
+        密码:<input type="password" name="upwd"/> <br />
+        性别:<input type="radio" name="xingbie" checked/>男   <input type="radio" name="xingbie"/>女 <br />
+        <!-- 出生年：<input type="radio" name="nian"/>2000   <input type="radio" name="nian"/>2017 -->
+        爱好: <input type="checkbox" name="hobby"/>睡觉  <input type="checkbox" name="hobby"/>玩游戏 <input type="checkbox" name="hobby" checked/>运动  <input type="checkbox" name="hobby"/>阅读  <br />
+        <input type="submit" value="重置"/> <br />
+        <input type="button" value="暂时没用的按钮"/> <br />
+        <input type="reset" value="登录"/>  <br />
+
+        <!-- 3.下拉列表 select>option选项[value][selected默认选中] -->
+        <select name="laogong">
+            <option value="魏晨">魏晨</option>
+            <option value="吴彦祖">吴彦祖</option>
+            <option value="彭于晏" selected>彭于晏</option>
+        </select>
+
+        <!-- 4.文本域 textarea[cols列数][rows行数] -->
+        <textarea name="qqkongjian" cols="30" rows="10">国家科技高科技</textarea>
+
+    </form>
+
+</body>
+</html>
